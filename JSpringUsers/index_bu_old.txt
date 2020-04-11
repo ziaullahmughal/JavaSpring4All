@@ -1,0 +1,73 @@
+<%-- 
+    Document   : index
+    Created on : Apr 9, 2020, 10:55:19 PM
+    Author     : zia
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Spring :: MVC :: Index </title>
+        <link rel="stylesheet" href="https://bootswatch.com/3/cerulean/bootstrap.min.css" />
+    </head>
+    <body>
+        <!-- Message Area -->
+    <c:if test="${not empty map.pass}">
+        <font color="GREEN">${map.pass}</font>
+    </c:if>
+    <c:if test="${not empty map.fail}">
+        <font color="RED">${map.fail}</font>
+    </c:if>
+<!--        <h1>Hello World! ${first}</h1>-->
+    <table>
+        <tr hight="100px">
+            <td>
+                
+            </td>
+            
+        </tr>
+        <tr>
+            <td width="200px">
+
+            </td>
+            <td>
+
+                <form action="login.htm" method="POST">
+                    <table>
+                        <tr class="info">
+                            <th>User Login</th>            
+                        </tr>
+                        <tr>
+                            <td>Login:</td>
+                            <td><input type="text" class="control-label" name="login" /></td>
+                        </tr>
+                        <tr>
+                            <td>Pass :</td>
+                            <td><input type="password" name="pass" /></td>
+                        </tr>
+                        <tr>
+                            
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="submit" class="btn btn-success sm" value="Login" /> 
+                            </td>
+                            <td>
+                                <input type="reset" class="btn btn-warning" value="Cancel" />
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+
+            </td>
+            <td width="25%">
+
+            </td>
+        </tr>
+
+
+    </table>
+</body>
+</html>
